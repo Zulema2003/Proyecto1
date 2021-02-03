@@ -1,10 +1,25 @@
 <?php
-   if(isset($_GET['controller']) && isset($_GET['method']))
+    incluir ( 'Controlador / Home.controller.php' );
+
+   if ( isset ( $ _GET [ 'controlador' ]) && isset ( $ _GET [ 'método' ]))
    {
-        echo "existen las variables";
+        $ controlador = $ _GET [ 'controlador' ];
+        $ método = $ _GET [ 'método' ];
    }
-   else
+   más
    {
-        echo "no variables";
+        $ controller = "Inicio" ;
+        $ método = "Inicio" ;
    }
+   
+   if ( class_exists ( $ controlador ) && method_exists ( $ controlador , $ método ))
+   {
+        $ clase = nuevo  $ controlador ;
+        $ clase -> $ método ();
+   }
+   más
+   {
+       echo  "clase no existe o el metodo es incorrecto" ;
+   }
+ 
 ?>
