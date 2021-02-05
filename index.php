@@ -19,7 +19,7 @@
    }
    más
    {
-       echo  "clase no existe o el metodo es incorrecto" ;
+       echo  "clase no existe o el metodo es incorrecto" ;   
    }
  
 ?>
