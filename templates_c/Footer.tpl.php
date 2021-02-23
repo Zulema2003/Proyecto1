@@ -1,6 +1,6 @@
 <?php
 /* Smarty version 3.1.38, created on 2021-02-03 22:35:14
-  from 'C:\xampp\htdocs\Proyecto_2021\View\Cabeceras\Footer.tpl' */
+  from 'C:\xampp\htdocs\Proyecto1-main\View\Cabeceras\Footer.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
@@ -9,9 +9,9 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
-    '2a257869b97cb4c8f7a337168da2b14dbcce4a00' => 
+    'Footer' => 
     array (
-      0 => 'C:\\xampp\\htdocs\\Proyecto_2021\\View\\Cabeceras\\Footer.tpl',
+      0 => 'C:\\xampp\\htdocs\\Proyecto1-main\\View\\Cabeceras\\Footer.tpl',
       1 => 1612360195,
       2 => 'file',
     ),

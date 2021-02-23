@@ -1,25 +1,26 @@
 <?php
-    incluir ( 'Controlador / Home.controller.php' );
 
-   if ( isset ( $ _GET [ 'controlador' ]) && isset ( $ _GET [ 'método' ]))
-   {
-        $ controlador = $ _GET [ 'controlador' ];
-        $ método = $ _GET [ 'método' ];
-   }
-   más
-   {
-        $ controller = "Inicio" ;
-        $ método = "Inicio" ;
-   }
+    require_once ('AutoLoad.php');
+
+    if(isset($_GET['controller']) && isset($_GET['method']))
+    {
+        $controller=$_GET['controller'];
+        $method=$_GET['method'];
+    }
+    else
+    {
+       $controller="Home";
+       $method="Inicio";
+    }
+
+    if(class_exists($controller) && method_exists($controller,$method))
+    {
+        $class=new $controller;
+        $class->$method();
+    }
+    else
+    {
+        echo "clase no existe o el metodo es incorrecto";
+    }
    
-   if ( class_exists ( $ controlador ) && method_exists ( $ controlador , $ método ))
-   {
-        $ clase = nuevo  $ controlador ;
-        $ clase -> $ método ();
-   }
-   más
-   {
-       echo  "clase no existe o el metodo es incorrecto" ;   
-   }
- 
 ?>

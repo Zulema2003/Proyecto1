@@ -601,7 +601,7 @@ class Smarty extends Smarty_Internal_TemplateBase
      *
      * @var array
      */
-    protected $template_dir = array('./templates/');
+    protected $template_dir = array('./View/');
 
     /**
      * flags for normalized template directory entries
